@@ -186,10 +186,10 @@ footer{
   padding: 10px; 
   align-self: center;
   align-content: center;
-  border-top-left-radius: 10px; /* Top left corner */
-  border-top-right-radius: 10px; /* Top right corner */
-  border-bottom-right-radius: 10px; /* Bottom right corner */
-  border-bottom-left-radius: 10px; /* Bottom left corner */
+  border-top-left-radius: 50px; /* Top left corner */
+  border-top-right-radius: 50px; /* Top right corner */
+  border-bottom-right-radius: 50px; /* Bottom right corner */
+  border-bottom-left-radius: 50px; /* Bottom left corner */
 
 }
 
