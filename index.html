@@ -1,104 +1,138 @@
+
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic HTML Website</title>
- </head>
-<body>
-<table>
+    <meta name="description" content="A simple HTML-only website">
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="A simple HTML-only website for roadmap.sh frontend" />
+    <meta name="keywords" content="Frontend Project, HTML, Roadmap.sh" />
+    <meta name="keywords" content="CSS, Responsive Design, Box Model, Typography, Flexbox" />
+    <meta name="author" content="Dadang Destari Putra" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Nanum+Pen+Script&family=Zeyada&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Waiting+for+the+Sunrise&display=swap" rel="stylesheet">
+<title>Responsive Portfolio</title>
+  </head>  
+  <body>
+    <header>
+    <header class="header-main">
+      <div class="yourlogo">
+        <img src="asset/front.png" alt="logo">
+        <div class="yourname">
+        <h1 class="nama">Dadang Destari Putra</h1>
+        </div>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#">Home&nbsp;/</a></li>
+          <li><a href="#">About&nbsp;/</a></li>
+          <li><a href="#">Project&nbsp;/</a></li>
+          <li><a href="#">Article&nbsp;/</a></li>
+          <li><a href="#">Contact_Me</a></li>         
+        </ul>
+      </nav>
+     </header>
+
+     <p class="judul">Frontend Developer <br></p>
+     <p class="ket">(HTML, CSS, JavaScript, Bootstrap4, Ajax, Vue.Js, React.Js, UI/UX)</p>
+    </header>
+<main>
+  <aside>
+    
+    <h2 class="project">Project</h2>
+    <div class="backgr">
+    <div class="port">
+      <p class="detail">HTML CSS Only Portfolio</p> 
+    </div>
+    <div class="port">
+      <p class="detail">Calculator</p> 
+    </div>
+    <div class="port">
+      <p class="detail">Quiz App</p> 
+    </div>
+    <div class="port">
+      <p class="detail">Coundown Timer</p>
+    </div>
+      <div class="port1">
+        <p class="detail">Product Upcoming Page</p> 
+      </div>         
+    </div>
+
+  </aside>
+<section>
+  <div class="work">
+  <h2>Work experience</h2>
+  </div>
+  <div class="rms">
+  <h2>roadmap.sh</h2>
+  <p>complete the entire frontend project with <br>
+    better results than others </p>
+  <p><a href="#">Visit My Profile</a></p>
+  </div>
+  <div class="osw">
+  <h2>Open Source work</h2>
+  <p>Contributed 50 open source projects. <br> 
+    Created 100 of my own projects with various types of web design.
+  </p>
+  <p><a href="#">Visit My Github Profile</a></p>
+  
    
-    <thead>
-        <tr>            
-        <td><img src="aset/logo1.png" alt="Logo" width="40px" height="40"></td>  
-        <td><b>Dadang Destari Putra</b></td>
-        <th>
-            <nav>
-            <a href="#">Home</a>
-            <a href="#">Project</a>
-            <a href="#">Artikel</a>
-            <a href="#">Contact</a>
-            </nav> 
-        </th>            
-        </tr>                            
-        <tr>
-        <td 
-        colspan="6"; style="text-align: center;"><b>Frontend Developer</b><br>
-        HTML only with proper layout, no styling
-        </td>
-        </tr>          
-    </thead>      
-        <!-- Batas thead -->
-    <tbody>
-        <tr>
-         <td><b>Project</b></td>
-         <td><b>Work Experience</b></td>
-         <td><b>Education</b></td>
-         </tr> 
-        <tr>
-            <td>
-                <P align="left" valign="top">HTML Only Portofolio</P>
-            </td>
-            <td rowspan="3">
-                <P>roadmap.sh</P>
-                <p>Solved all the fonted Project</p>
-                <p><a href="My Profile">Visit My Profile</a></p>                
-            </td>
-            <td rowspan="5">
-                <P>Graduated With Satisfied Point <br>
-                Won acme hackaton.<br>
-                Organizes 30 session</P>
-                <P>Course I Took</p>
-                -&nbsp;&nbsp;Object Oriented Programming<br>
-                -&nbsp;&nbsp;Data Structures and Algorithms<br>
-                -&nbsp;&nbsp;Web Engineering<br>
-                -&nbsp;&nbsp;Artificial Intelligence<br>
-                -&nbsp;&nbsp;Human Computer Interaction<br>
-                -&nbsp;&nbsp;Computer Graphics<br>
-                -&nbsp;&nbsp;Database Mangement Systems<br>
-                -&nbsp;&nbsp;Distributed Database Systems<br>
-                -&nbsp;&nbsp;Discreet Mathematics<br>                                 
-            </td>                                                     
-        </tr>
-        <tr>
-            <td align="left" valign="top"> Calculator</td>                                          
-        </tr>
-        <tr>
-            <td align="left" valign="top">Quiz Apps</td>                                                                                                       
-        </tr>
-        <tr>
-            <td align="left" valign="top">Count Down Timer</td>
-            <td align="left" valign="top"><b>Open Source Work</b></td>
-        </tr>
-        <tr>
-            <td align="left" valign="top">Produce Up Coming Project</td>
-            <td align="left" valign="top">Contributed to 50 opensource <br>
-            project. Made my own Project <br>
-            with 200 Github Stars
-            <p><a href="My Profile">Visit My GitHub Profile</a></p>
-            </td>                                                     
-        </tr>           
-    </tbody>
-    <!-- Batas tbody -->
-     <tfoot>
-        <tr> 
-            <td>Review From My Teacher</td>
-        </tr>
-        <tr>
-            <td style="text-align: center;"> Anak yang pintar <br>
-                Codepolitan Babi
-            </td>
-            <td style="text-align: center;">Malu Betanya sesat dijalan <br>
-                Codepolitan Babi
-            </td>
-            <td style="text-align: center;">Google Gemini Lebih Pintar <br>
-                Codepolitan Babi
-            </td>
-        </tr>
-<tr>
-    <th colspan="6"; style="text-align: center;"> &copy; 2023 Your Company Name</th>
-</tr>
-     </tfoot>    
-</table>  
-</body> 
- </html>
+  
+  </div>
+</section>
+
+  <article>
+    <h2 class="edu">Education</h2>
+    <p>Padjadjaran University, Bachelor of Physical Sciences <br>
+      August 1997 to February 2002 <br>
+      focused on studying Geophysics Engineering <br>
+    <p>Sangga Buana University, Bachelor Civil Engineering <br>      
+    September 2012 to September 2016 <br>
+    Technical skills: Structural calculations, design and project management. <br>
+    Soft skills: Communication, leadership, and teamwork. <br>
+    Problem solving skills: Analyze complex problems and find innovative solutions.
+    </p>
+    <h2 class="edu">Non Formal Education</h2>    
+    <ul>
+    <li>Online Course KelasFullstack.id at https://www.codepolitan.com </li>
+    <li>Online Course Frontend Developer Course at https://roadmap.sh </li>
+    </ul>    
+  </article>
+</main>
+
+<footer>
+
+  <div class="top-section">
+    <h2>Client Testimonials :</h2>
+  </div>
+
+  <div class="container">
+    <div class="item">
+    <h4> makan minum itu enak sekali</h4>
+    <p style="text-align: center; color: grey;">Joe Tarkam</p>   
+    </div>
+    <div class="item">
+      <h4> makan minum itu enak sekali</h4>
+      <p style="text-align: center; color: grey;">Joe Tarkam</p>
+    </div>
+    <div class="item">
+      <h4> makan minum itu enak sekali</h4>
+      <p style="text-align: center; color: grey;">Joe Tarkam</p>
+    </div>
+  </div>
+
+  <div class="top-section">
+   <p style="text-align: center; margin-top: 10%;"> &copy; all rights reserved 2024</p>
+  </div>
+  
+</footer>
+    
+
+  </body>
+</html>
