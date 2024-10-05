@@ -1,18 +1,300 @@
-/* ... (previous CSS rules) ... */
+header{
+  border: 2px solid black;
+  padding: 10px;
+  }
 
-.logo {
-    flex-shrink: 0;
-    margin-right: 20px;
+.header-main{
+  border:none;
+  display: flex;    
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  align-self: center;
+  justify-content:space-between; 
+   
+}
+.yourlogo{
+  width: fit-content;  
+  height: 60px;
+  align-content: center;
+  display: flex; 
+}
+.yourlogo img{
+  width: 40px;
+  height: 40px;
+  align-self: center;
+}
+.yourname{
+  width: fit-content;
+  height: 60px;
+  align-self: center;   
   }
-  
-  .about, .projects, .skills, .contact {
-    margin-bottom: 40px;
+.nama{
+  font-size: 22px;  
+  margin-left: 5px;
+  align-content: center;
+  align-self: center;  
   }
-  
-  .skills ul {
-    columns: 2;
+
+.navbar{
+  height: 60px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+}
+
+.navbar ul{  
+  align-self: center;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 5px;
+  width: 100%;  
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #000; /* Adjust color as needed */
+  padding: 5px;  
+}
+
+.navbar li {
+  list-style: none;
+  color: #000; /* Adjust color as needed */
+  padding: 5px;
+  display: flex;  
+}
+
+.judul{
+  text-align: center;
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 40px;
+  margin-bottom: 0.25rem;
+}
+
+.ket{
+  text-align: center;
+  font-family: "Space Mono", monospace;  
+  font-size: 18px;
+  color: grey;
+  font-style: normal;  
+  margin-top: 0.25rem;
+}
+
+main{
+  border:none;
+  display: flex;
+  border: 2px solid black;
+  border-top: none;
+}
+aside{
+  width: 20%;  
+  height: fit-content;
   }
-  
-  .contact p {
-    margin-bottom: 10px;
+
+section{
+  width: 30%;
+  border: 2px solid black;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+  margin: 0;  
+}
+
+article{
+  width: 50%;
+  border: 2px solid black;
+  border-top: none;
+  border-right: none;
+  border-bottom: none;
+}
+h2{
+  font-family: "Waiting for the Sunrise", cursive;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 22px;
+  margin: 15px;    
+}
+
+.osw{
+  border-top: 2px solid black;
+}
+p{
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 14px;
+  margin: 15px;
+}
+p a{
+  text-decoration: none;
+}
+
+.detail{
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 14px;
+  margin: 15px;
+}
+
+.port{
+  border-bottom: 2px solid black;
   }
+.port1{
+    border-bottom: none;
+    }
+
+article li {
+  list-style: symbols("-");
+  font-family: "Space Mono", monospace;
+  font-weight: bolder;
+  font-style: normal;
+  font-size: 14px;
+}
+footer{
+  padding: 20px;
+  border: 2px solid black;
+  border-top: none;
+}
+
+.top-section { 
+  text-align: left;
+  border: 0%;
+  margin: 0%;
+  padding: 0%;  
+}
+.container {
+  box-sizing: border-box;
+  display: flex;
+  justify-content:space-between;
+  width: 100%;    
+  font-family: "Space Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+  align-self: center;   
+}
+
+.item {
+   /* Ensures items take up equal space */
+  border: 1px solid black;
+  padding: 10px; 
+  align-self: center;
+  align-content: center;
+  border-top-left-radius: 10px; /* Top left corner */
+  border-top-right-radius: 10px; /* Top right corner */
+  border-bottom-right-radius: 10px; /* Bottom right corner */
+  border-bottom-left-radius: 10px; /* Bottom left corner */
+
+}
+
+@media (max-width: 800px) {
+  section{
+    flex-direction: column;
+    border-bottom: 2px solid black;   
+    border-left: none;  
+  }
+  .header-main{
+    flex-direction: column;
+  }
+  .yourlogo {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100%;
+    
+  }
+  .yourlogo img{
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+  }
+ .yourname {
+    margin: 5px 0;
+    flex-direction: column;
+    align-content: center;
+  }
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    margin: 20px 0;
+    width: 100%;
+    
+  }
+    
+  .navbar li{
+  flex-direction: column;
+  }
+
+    main{
+    flex-direction: column;
+    width: 99.4%;
+    border-right: 2px solid black;
+
+  }
+
+  aside{
+    width: 100%; 
+    border-right: 2px solid black;
+    border-left: none; 
+    border-right: none;
+    border-bottom: 2px solid black;
+
+  }
+
+  section{
+    width: 100%;
+    border-right: 2px solid black;
+    background-color: darkgray; 
+  }
+
+  section .work h2{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    margin-top: 0;
+    }
+
+  article{
+    width: 100%;
+    border-right: 2px solid black; 
+    border-left: none;
+    border-right: none;
+  }
+  aside{
+    background-color: darkgrey;
+}
+aside h2{
+  background-color: white;
+  margin:0;
+  padding-left: 15px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid black;
+}
+
+.work{
+  background-color: white;    
+  border-bottom: 2px solid black;
+}
+.container{
+  width: 100%;
+  flex-direction: column;
+  align-content: center;
+}
+.item {
+ margin: 25px;
+}
+.top-section { 
+  text-align: center;
+  border: 0%;
+  margin: 0%;
+  padding: 0%;
+}
+
+}
